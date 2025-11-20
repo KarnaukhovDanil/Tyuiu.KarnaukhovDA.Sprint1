@@ -10,9 +10,9 @@ namespace Tyuiu.KarnaukhovDA.Sprint1.Task3.V13.Test
             DataService ds = new DataService();
             double number = 123;
             
-            double wait = 15129;
-            var res = ds.MultiplyOfDigits(number);
-            Assert.AreEqual(wait, res, 0.001);
+            double wait = 6;
+            double res = ds.MultiplyOfDigits(number);
+            Assert.AreEqual(wait, res);
         }
     }
 }

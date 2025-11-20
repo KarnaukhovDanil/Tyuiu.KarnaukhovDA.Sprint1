@@ -21,8 +21,9 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                      *");
         Console.WriteLine("*********************************************************************************************************");
 
-        double number = 123;
-        Console.WriteLine("Найти =" + (number));
+        
+        Console.WriteLine("Введите трехзначное число :");
+        double number = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("*********************************************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                            *");
