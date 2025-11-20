@@ -4,9 +4,9 @@ namespace Tyuiu.KarnaukhovDA.Sprint1.Task2.V6.Lib
 {
     public class DataService : ISprint1Task2V6
     {
-        public double ConvertMToKm(int value)
+        public double ConvertMToKm(int meters)
         {
-            return value / value;
+            return (double)meters / 1000;
         }
     }
 }

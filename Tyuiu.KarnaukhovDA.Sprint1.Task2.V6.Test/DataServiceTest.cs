@@ -8,9 +8,9 @@ namespace Tyuiu.KarnaukhovDA.Sprint1.Task2.V6.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            int x = 1000; //метров
-            var res = ds.ConvertMToKm(x);
-            Assert.AreEqual(1.000, res);
+            int meters = 6;
+            double result = ds.ConvertMToKm(meters);
+            Assert.AreEqual(0.006 , result, 0.000001);
         }
     }
 }
