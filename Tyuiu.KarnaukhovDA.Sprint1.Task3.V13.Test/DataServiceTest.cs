@@ -8,9 +8,9 @@ namespace Tyuiu.KarnaukhovDA.Sprint1.Task3.V13.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double number = 13;
+            double number = 123;
             
-            double wait = 169;
+            double wait = 15129;
             var res = ds.MultiplyOfDigits(number);
             Assert.AreEqual(wait, res, 0.001);
         }
