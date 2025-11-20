@@ -21,7 +21,7 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                      *");
         Console.WriteLine("*********************************************************************************************************");
 
-        
+
         Console.WriteLine("Введите трехзначное число :");
         double number = Convert.ToDouble(Console.ReadLine());
 
@@ -29,8 +29,18 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                            *");
         Console.WriteLine("*********************************************************************************************************");
 
-        Console.WriteLine("Произведение цифр заданного трехзначного числа =" + ds.MultiplyOfDigits(number));
+        try
+        {
+            double res = ds.MultiplyOfDigits(number);
 
+            Console.WriteLine($"Произведение цифр числа {number} = {res}");
+        }
+        catch
+        (ArgumentException e)
+        {
+            Console.WriteLine($"Ошибка:{e.Message}");
+        }
         Console.ReadKey();
+    
     }
 }

@@ -8,7 +8,7 @@ namespace Tyuiu.KarnaukhovDA.Sprint1.Task3.V13.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double number = 123;
+            double number = 123.0;
             
             double wait = 6;
             double res = ds.MultiplyOfDigits(number);
