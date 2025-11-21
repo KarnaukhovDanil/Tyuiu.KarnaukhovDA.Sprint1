@@ -1,0 +1,21 @@
+﻿using Tyuiu.KarnaukhovDA.Sprint1.Task5.V2.Lib;
+namespace Tyuiu.KarnaukhovDA.Sprint1.Task5.V2.Test
+{
+    [TestClass]
+    public sealed class DataServiceTest
+    {
+        [TestMethod]
+        public void ValidExpression()
+        {
+            double temp = 86;
+            DataService ds = new DataService();
+
+            double res = ds.FahrenheitToСelsius(temp);
+
+            int result = Convert.ToInt32(res);
+
+            int wait = 30;
+            Assert.AreEqual(result, wait);
+        }
+    }
+}
