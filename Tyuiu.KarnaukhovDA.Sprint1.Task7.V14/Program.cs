@@ -6,6 +6,8 @@
 //          3x
 internal class Program
 {
+    
+
     private static void Main(string[] args)
     {
         DataService ds = new DataService();
@@ -41,6 +43,7 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                            *");
         Console.WriteLine("*********************************************************************************************************");
 
+ 
         Console.WriteLine(ds.Calculate(x, y));
         Console.ReadKey();
     }
